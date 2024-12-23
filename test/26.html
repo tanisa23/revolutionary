@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            padding: 10px 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            padding: 16px;
+        }
+        .section {
+            height: 600px;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+    </div>
+
+    <div class="content">
+        <div class="section" id="section1">
+            <h2>Section 1</h2>
+            <p>This is Section 1 content.</p>
+        </div>
+        <div class="section" id="section2">
+            <h2>Section 2</h2>
+            <p>This is Section 2 content.</p>
+        </div>
+        <div class="section" id="section3">
+            <h2>Section 3</h2>
+            <p>This is Section 3 content.</p>
+        </div>
+    </div>
+
+</body>
+</html>
